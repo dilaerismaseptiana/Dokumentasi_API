@@ -1,0 +1,826 @@
+{
+	"info": {
+		"_postman_id": "c36710a3-96fd-41f9-ac37-682bfdbd0142",
+		"name": "Portak Akademik",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34882805",
+		"_collection_link": "https://crimson-zodiac-742381.postman.co/workspace/Mine~bf1a8928-c845-4abb-8883-c51544db7016/collection/34882805-c36710a3-96fd-41f9-ac37-682bfdbd0142?action=share&source=collection_link&creator=34882805"
+	},
+	"item": [
+		{
+			"name": "Administrator",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/administrator",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"administrator"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"nama\": \"tes\",\n      \"jabatan\": \"tes\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/administrator",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"administrator"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"nama\": \"tes-update\",\n      \"jabatan\": \"tes\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/administrator/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"administrator",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/administrator/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"administrator",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Direktur",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/direktur",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"direktur"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"nama\": \"tes\",\n      \"jabatan\": \"tes\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/direktur",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"direktur"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"nama\": \"tes-update\",\n      \"jabatan\": \"tes\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/direktur/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"direktur",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/direktur/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"direktur",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jadwal Kuliah",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/jadwal-kuliah",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"jadwal-kuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"kode_mata_kuliah\": \"tes\",\n    \"waktu\":\"2024-07-18T06:57:10.000Z\",\n    \"ruangan\":\"2\",\n    \"dosen\":\"tes\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/jadwal-kuliah",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"jadwal-kuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Copy 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"kode_mata_kuliah\": \"tes\",\n    \"waktu\":\"2024-07-18T06:57:10.000Z\",\n    \"ruangan\":\"2\",\n    \"dosen\":\"tes-update\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/jadwal-kuliah/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"jadwal-kuliah",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy 2",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/jadwal-kuliah/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"jadwal-kuliah",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mahasiswa",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/mahasiswa",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Copy 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"nim\":\"2100016001\",\n      \"nama\":\"tes\",\n      \"program_studi\":\"Sistem Informasi\",\n      \"fakultas\":\"FAST\",\n      \"alamat\":\"Yogyakarta\",\n      \"nomor_telepon\":\"0987654321\",\n      \"email\":\"tes@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/mahasiswa",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Copy 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"nama\":\"tes-update\",\n      \"program_studi\":\"Sistem Informasi\",\n      \"fakultas\":\"FAST\",\n      \"alamat\":\"Yogyakarta\",\n      \"nomor_telepon\":\"0987654321\",\n      \"email\":\"tes@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/mahasiswa/2100016001",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"mahasiswa",
+								"2100016001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy 3",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/mahasiswa/2100016001",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"mahasiswa",
+								"2100016001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mata Kuliah",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/mata-kuliah",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"mata-kuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Copy 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"kode_mata_kuliah\": \"tes2\",\n      \"nama_mata_kuliah\": \"tes\",\n      \"sks\": 3,\n      \"dosen\": \"tes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/mata-kuliah",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"mata-kuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Copy 4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"nama_mata_kuliah\": \"tes-update\",\n      \"sks\": 3,\n      \"dosen\": \"tes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/mata-kuliah/tes2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"mata-kuliah",
+								"tes2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy 4",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/mata-kuliah/tes2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"mata-kuliah",
+								"tes2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nilai",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/nilai",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"nilai"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Copy 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"nim\":\"2100016001\",\n      \"kode_mata_kuliah\":\"tes\",\n      \"nilai_ujian\":90,\n      \"nilai_tugas\":80,\n      \"nilai_akhir\":85\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/nilai",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"nilai"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Copy 5",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"nilai_ujian\":50,\n      \"nilai_tugas\":50,\n      \"nilai_akhir\":55\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/nilai/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"nilai",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Copy 5",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/nilai/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"nilai",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login/Register",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nama_pengguna\":\"tes\",\n    \"kata_sandi\":\"tes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register with NIM",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nim\":\"2100016001\",\n    \"kata_sandi\":\"tes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/register-nim",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"register-nim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nama_pengguna\":\"tes\",\n    \"kata_sandi\":\"tes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login with NIM",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nim\":\"2100016001\",\n    \"kata_sandi\":\"tes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login-nim",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"login-nim"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Im1haGFzaXN3YSIsImlhdCI6MTcyMTMwNjc5MSwiZXhwIjoxNzIxMzEwMzkxfQ.l3aL9xAp73IBnaNZowmkRxhMg5URKMevYSUbc2j1UQQ",
+			"type": "string"
+		}
+	]
+}
